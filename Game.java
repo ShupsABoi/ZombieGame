@@ -168,7 +168,22 @@ public class Game
             System.out.println("Day 5");
             System.out.println(aleksi);
             System.out.println(marlow);
-            
+
+            System.out.println("They finally reach the Anchorage outskirts. The cold has kept zombie activity low. The base from the radio is nearby. As they hike through the frozen landscape, the find the military base. The soldiers assume them as refugees until Aleksi shows them his clearance badge from when he defected to the U.S., they let him into the lab");
+            System.out.println("The lab systems can synthesize a cure, but Aleksi must stay to administer it remotely while soldiers deploy to minimize damages and deal with the already long infected. The cure spread airborne can work at most as a vaccine, those who are already infected will not be able to turn back. As of right now there isn't enough of the concentrate to administer cures to the infected, only immunities to the uninfected. The journey back to Harshada will take time and more people will be infected then uninfected, leading the world to an apocalypse. He must choose:");
+            System.out.println("Do you choose the World or Harshada? [W || H]");
+            answer = sc.nextLine().toUpperCase(); 
+
+            if (answer.equals("H"))
+            {
+                System.out.println("The world goes into a state of apocalypse, but Aleksi goes back, saves Harshada and they live on with Martlowe in the apocalypse, like Michonne and Rick");
+            }
+            else if (answer.equals("W"))
+            {
+                System.out.println("The remaining zombies are killed, but the world is cured. Aleksi goes back to the basement where Harshada has been fully turned. He hugs his dead wife, he kills her, then himself(he left Marlow with the soldiers)");
+            }
+            else
+                System.out.println("Everyone survives
             
             
             dead = aleksi.isDead();
