@@ -96,11 +96,40 @@ public class Game
                 aleksi.alterSanity(10);
                 System.out.println("After the nap, it's time they make their way to Seattle Port. There are some abandoned cars on the road and highway so they have to take a long route and they have to be sneaky in order to not get caught by zombies. \n30 minutes into the drive they see a huge group of zombies on the highway which means they have to take a longer route to Seattle Port. \nHe's going to have to drive until sunrise while Marlow sleeps.");
                 aleksi.alterSanity(-5);
+                System.out.println(aleksi + "\n" + marlow);
             }
             //No supplies
             else if (determinant == 0)
             {
+                System.out.println("Aleksi is short on supplies, so he and Marlow need to grab some from a store before they finish the \ndrive to Seattle Port. They go driving a little until they can find a gas station. \n[ENTER TO CONTINUE]");
+                sc.nextLine();
+                System.out.println("There are 6 zombies right outside the gas station! Aleksi can either run them over [0] or try to be sneaky. [1]");
+                determinant = sc.nextInt();
                 
+                //KILLTHEMALL
+                if (determinant == 0)
+                {
+                    System.out.println("Aleksi goes into the gas station while Marlow stays outside the store to look out for zombies. Aleksi grabs food for him and Marlow, \nfuel  and he finds a crowbar. They’re ready to go so they get into the car, but before they go to Seattle Port, Aleksi parks somewhere \ndiscreet and takes a nap while Marlow stays on the lookout. [ENTER TO CONTINUE]");
+                    sc.nextLine();
+                    aleksi.alterSanity(10);
+                    System.out.println("Then after the nap, make their way to Seattle Port. There are some abandoned cars on the road and highway so they have to take a long route \nand they have to be sneaky in order to not get caught by zombies. 30 minutes into the drive they see a huge group of zombies on the \nhighway which means they have to take a longer route to Seattle Port which means they have to drive until sunrise while Marlow sleeps. ")
+                    aleksi.alterSanity(-15);
+                    System.out.println(aleksi + "\n" + marlow);
+                    
+                }
+                //Sneaky
+                else if (determinant == 1)
+                {
+                    System.out.println("As Aleksi tries to sneak into the gas station, the zombies find him and attack him! [ENTER TO CONTINUE]");
+                    marlow.alterHealth(-35);
+                    sc.nextLine();
+                    System.out.println("Marlow finds a crowbar and gives it to Aleksi. Aleksi is able to kill the zombies. ‘Good boy Marlow’ Aleksi says out of breath while handing him a piece of beef jerky. \nAleksi barks and licks his face then grabs the piece of beef jerky. Aleksi collects food, fuel.. \nThey’re ready to go so they get into the car, but before they go to Seattle Port, Aleksi parks \nsomewhere discreet and takes a nap while Marlow stays on the lookout. Aleksi dreams about his wife and how much he truly loves her. [ENTER TO CONTINUE]");
+                    sc.nextLine();
+                    aleksi.alterSanity(10);
+                    System.out.println("Then after the nap, they make their way to Seattle Port. There are some abandoned cars on the road and highway so they have to take a long route and they \nhave to be sneaky in order to not get caught by zombies. 30 minutes into the drive Aleksi sees a huge group of zombies on the highway which means they have to take a longer route to Seattle Port which means Aleski has to drive until sunrise while Marlow sleeps. [ENTER TO CONTINUE}");
+                    sc.nextLine();
+                    System.out.println(aleksi + "\n" + marlow);
+                }
             }
             
             
