@@ -133,6 +133,8 @@ public class Game
             }
             
             
+            //DAY 3
+            
             System.out.println("DAY 3");
             System.out.println(aleksi);
             System.out.println(marlow);
@@ -140,14 +142,32 @@ public class Game
             System.out.println(" As dawn breaks on the third day, Aleksi wakes up to the sight of the previously \nbubbling city cast with an eerie emptiness. Even void of zombies. He leaves Marlow and he begins to venture out in hopes of finding someone who can boat him \nto Alaska. A few hours pass with seemingly no luck. Aleksi notes that it’s very peculiar that there hasn’t been a single zombie encounter, despite the abundance of materials, one of which includes a \nmakeshift molotov.")
             System.out.println("It’s around noon when he arrives on what's left of  Jackson Street. \nHe gets startled by a lone zombie and hides behind a building, watching as it makes its way into a cafe. A closer inspection leads to him finding a very large group of them inside this singular cafe, almost pouring out. \nAleksi realises that something important has to be there if they’re all cooped up like this. Like someone wanted this to be noticed. He has to make a choice if he wants to get rid of them.")
             
-            System.out.println("Do you kill the zombies? [Y || N]");
+            System.out.println("Do you kill the zombies with your weapon or the molotov? [W || M]");
             answer = sc.nextLine().toUpperCase();
             
-            if (answer.equals("Y") && determinant == 1)
+            if (answer.equals("W") && determinant == 1)
             {
-                System.out.println("Weapon in hand, Aleksi steels himself and prepares to charge in. He leaps off the ground and begins to slaughter the zombies one after the other. \nOne of the zombies is much tougher than the others and ends up getting the upper hand on Aleksi' weapon. It’s unusable in its current state now. Despite the damage and fatigue on himself, Aleksi powers through and finishes the rest of them off. There’s a gun in the far back of the room!(You've acquired a new weapon)");
-                aleksi.alterHealth(-25);
+                System.out.println("Weapon in hand, Aleksi steels himself and prepares to charge in. He leaps off the ground and begins to slaughter the zombies one after the other. \nOne of the zombies is much tougher than the others and ends up getting the upper hand on Aleksi' weapon. It’s unusable in its current state now. Despite the damage and fatigue on himself, Aleksi powers through and finishes the rest of them off. However he took too much damage in his fight, he bleeds out.");
+                aleksi.alterHealth(-100);
             }
+            else if(answer.equals("M" && determinant == 1)
+            {
+                System.out.println("He kills all the zombies in one fell swoop.");
+                System.out.println("")
+            }
+            else
+            {
+                System.out.println("The Zombies spot Aleksi and kill him");
+                aleksi.alterHealth(-100);
+            }
+
+            //Day 4
+
+
+            //Day 5
+            System.out.println("Day 5");
+            System.out.println(aleksi);
+            System.out.println(marlow);
             
             
             
