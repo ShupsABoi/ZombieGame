@@ -183,7 +183,7 @@ public class Game
                 System.out.println("The remaining zombies are killed, but the world is cured. Aleksi goes back to the basement where Harshada has been fully turned. He hugs his dead wife, he kills her, then himself(he left Marlow with the soldiers)");
             }
             else
-                System.out.println("Everyone survives
+                System.out.println("Everyone survives, Aleksi has them get a bigger drone and put it over Monmouth since it's close enough to the orgin, all the zombies will be cured and the vaccine will spread after thanks to the help of Harshada who is a Bio-Chemist. Marlow does a flip");
             
             
             dead = aleksi.isDead();
